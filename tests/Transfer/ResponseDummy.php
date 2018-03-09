@@ -4,17 +4,23 @@ namespace FondOfPHP\ActiveCampaign\Transfer;
 
 class ResponseDummy
 {
+    /**
+     * @var bool
+     */
     protected $valid;
 
+    /**
+     * @param bool $valid
+     */
     public function __construct($valid = true)
     {
         $this->valid = $valid;
-
-        return $this;
     }
 
+    /**
+     * @return int
+     */
     public function getStatusCode() {
-        /** @see https://de.wikipedia.org/wiki/HTTP-Statuscode */
         return ($this->valid === true) ? 200 : 500;
     }
 

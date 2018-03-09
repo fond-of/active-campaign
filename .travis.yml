@@ -1,0 +1,18 @@
+language: php
+
+php:
+  - 7.1
+
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
+
+install:
+  - composer install --no-interaction --prefer-dist
+
+script:
+  - vendor/bin/phpunit --configuration phpunit.xml
+
+after_success:
+  - vendor/bin/php-coveralls --config .coveralls.yml

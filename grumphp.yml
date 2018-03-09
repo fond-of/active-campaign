@@ -1,0 +1,14 @@
+parameters:
+  git_dir: .
+  bin_dir: vendor/bin
+  tasks:
+    composer:
+      no_local_repository: true
+    yamllint: ~
+    jsonlint: ~
+    xmllint: ~
+    phpunit: ~
+    phpcs: ~
+    phpmd:
+    phpcpd:
+      exclude: ['vendor', 'tests']
