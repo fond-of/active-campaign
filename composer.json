@@ -1,0 +1,35 @@
+{
+  "name": "fondofbags/active-campaign",
+  "description": "PHP library for use with the ActiveCampaign REST API.",
+  "license": "proprietary",
+  "keywords": ["active campaign", "rest", "api"],
+  "authors": [
+    {
+      "name": "Daniel Rose",
+      "email": "daniel.rose@fondofbags.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "~6.2",
+    "jms-serializer/serializer": "~1.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.4",
+    "phpmd/phpmd": "~2.6",
+    "squizlabs/php_codesniffer": "~2.8",
+    "sebastian/phpcpd": "~3.0",
+    "sebastian/phpdcd": "~1.0",
+    "phploc/phploc": "~3.0",
+    "pdepend/pdepend": "~2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "FondOfPHP\\ActiveCampaign\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FondOfPHP\\ActiveCampaign\\": "tests"
+    }
+  }
+}
