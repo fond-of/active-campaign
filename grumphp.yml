@@ -8,7 +8,8 @@ parameters:
     jsonlint: ~
     xmllint: ~
     phpunit: ~
-    phpcs: ~
-    phpmd:
+    phpcs:
+      whitelist_patterns:
+        - /^src\/(.*)
     phpcpd:
       exclude: ['vendor', 'tests']
